@@ -5,8 +5,6 @@
   <meta charset="utf-8">
   <title>登入</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="fly,layui,前端社区">
-  <meta name="description" content="Fly社区是模块化前端UI框架Layui的官网社区，致力于为web开发提供强劲动力">
   <link rel="stylesheet" href="../../res/layui/css/layui.css">
   <link rel="stylesheet" href="../../res/css/global.css">
 </head>
@@ -15,17 +13,26 @@
 <div class="fly-header layui-bg-black">
   <div class="layui-container">
     <a class="fly-logo" href="/">
-      <img src="../../res/images/logo.png" alt="layui">
+      <!-- <img src="" alt="layui">-->
     </a>
     <ul class="layui-nav fly-nav layui-hide-xs">
-      <li class="layui-nav-item layui-this">
-        <a href="/"><i class="iconfont icon-jiaoliu"></i>交流</a>
+      <li class="layui-nav-item">
+        <a href="index.html"><i class="iconfont icon-jiaoliu"></i>沟通交流</a>
       </li>
       <li class="layui-nav-item">
-        <a href="../case/case.html"><i class="iconfont icon-iconmingxinganli"></i>案例</a>
+        <a href="../case.html"><i class="iconfont icon-iconmingxinganli"></i>法律法规与政策</a>
       </li>
       <li class="layui-nav-item">
-        <a href="http://www.layui.com/" target="_blank"><i class="iconfont icon-ui"></i>框架</a>
+        <a href="../shop.html" target="_blank"><i class="iconfont icon-renshu"></i>周边商城</a>
+      </li>
+      <li class="layui-nav-item">
+        <a href="../shop.html" target="_blank"><i class="iconfont icon-tishilian"></i>教育培训</a>
+      </li>
+      <li class="layui-nav-item">
+        <a href="../shop.html" target="_blank"><i class="iconfont icon-pinglun1"></i>诉讼服务</a>
+      </li>
+      <li class="layui-nav-item">
+        <a href="../shop.html" target="_blank"><i class="iconfont icon-yulan"></i>常用链接库</a>
       </li>
     </ul>
     
@@ -79,7 +86,7 @@
                   <input type="text" id="L_vercode" name="vercode" required lay-verify="required" placeholder="请回答后面的问题" autocomplete="off" class="layui-input">
                 </div>
                 <div class="layui-form-mid">
-                  <span style="color: #c00;">{{d.vercode}}</span>
+                  <span style="color: #c00;"></span>
                 </div>
               </div>
               <div class="layui-form-item">
@@ -102,12 +109,6 @@
 </div>
 
 <div class="fly-footer">
-  <p><a href="http://fly.layui.com/" target="_blank">Fly社区</a> 2017 &copy; <a href="http://www.layui.com/" target="_blank">layui.com 出品</a></p>
-  <p>
-    <a href="http://fly.layui.com/jie/3147/" target="_blank">付费计划</a>
-    <a href="http://www.layui.com/template/fly/" target="_blank">获取Fly社区模版</a>
-    <a href="http://fly.layui.com/jie/2461/" target="_blank">微信公众号</a>
-  </p>
 </div>
 
 <script src="../../res/layui/layui.js"></script>
