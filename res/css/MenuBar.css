@@ -1,0 +1,144 @@
+ul.MenuBarHorizontal
+{
+    position: relative;
+    padding: 0 20px;
+    background-color: #393D49;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 0;
+    box-sizing: border-box
+
+}
+
+ul.MenuBarActive
+{
+    z-index: 1000;
+}
+
+ul.MenuBarHorizontal li
+{
+    width: 20%;
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    line-height: 60px;
+    background-color: #870101;
+}
+
+ul.MenuBarHorizontal ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 100%;
+    z-index: 10000;
+    cursor: default;
+    width:100%;
+    position: absolute;
+    left: -1000em;
+    position:absolute;
+}
+
+ul.MenuBarHorizontal ul.MenuBarSubmenuVisible
+{
+    left: auto;
+}
+
+ul.MenuBarHorizontal ul li
+{
+    float:left;
+}
+
+ul.MenuBarHorizontal ul ul
+{
+
+}
+
+ul.MenuBarHorizontal ul.MenuBarSubmenuVisible ul.MenuBarSubmenuVisible
+{
+    left: auto;
+    top: 0;
+}
+
+
+
+ul.MenuBarHorizontal a
+{
+    height:40px;
+    display: block;
+    cursor: pointer;
+    color: #870101;
+    text-align:center;
+    text-decoration: none;
+    font-size:16px;
+}
+ul.MenuBarHorizontal ul a
+{
+    display: block;
+    cursor: pointer;
+    color: #333;
+    text-align:left;
+    text-decoration: none;
+
+}
+
+ul.MenuBarHorizontal a:hover, ul.MenuBarHorizontal a:focus
+{
+    background-color:#870101;
+    color: #FFF;
+}
+ul.MenuBarHorizontal ul a:hover, ul.MenuBarHorizontal ul a:focus
+{
+    background-color: #C00;
+    color: #870101;
+}
+
+
+ul.MenuBarHorizontal a.MenuBarItemHover, ul.MenuBarHorizontal a.MenuBarItemSubmenuHover, ul.MenuBarHorizontal a.MenuBarSubmenuVisible
+{
+    background-color:#393D49;
+    color: #fff;
+}
+
+
+
+
+ul.MenuBarHorizontal a.MenuBarItemSubmenu
+{
+
+}
+
+ul.MenuBarHorizontal ul a.MenuBarItemSubmenu
+{
+}
+
+ul.MenuBarHorizontal a.MenuBarItemSubmenuHover
+{
+
+}
+
+ul.MenuBarHorizontal ul a.MenuBarItemSubmenuHover
+{
+
+}
+
+
+
+
+ul.MenuBarHorizontal iframe
+{
+    position: absolute;
+    z-index: 1010;
+    filter:alpha(opacity:0.1);
+}
+
+@media screen, projection
+{
+    ul.MenuBarHorizontal li.MenuBarItemIE
+    {
+        display: inline;
+        f\loat: left;
+    }
+}

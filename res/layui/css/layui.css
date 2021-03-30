@@ -2686,6 +2686,15 @@ body .layui-table-tips .layui-layer-content {
     vertical-align: middle;
     line-height: 60px
 }
+.layui-nav .layui-nav-submenu {
+    position: relative;
+    display: table-row;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    line-height: 60px
+}
+
 
 .layui-nav .layui-nav-item a {
     display: block;

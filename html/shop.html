@@ -18,72 +18,99 @@
     </style>
 </head>
 <body class="fly-full">
+<script type="text/javascript">
+    function show(id) {
+        el = document.getElementById(id);
+        el.style.visibility = "visible";
+        let i;
+        for (i = 0; i < 10; i++) {
+            setTimeout(function (el) {
+                el.style.opacity = i / 10;
+            }, 1000)
+        }
+    }
 
+    function visable(id) {
+        var el = document.getElementById(id)
+        el.style.visibility = "hidden"
+    }
+</script>
 <div class="fly-header layui-bg-black">
     <div class="layui-container">
         <a class="fly-logo" href="/">
-            <!-- <img src="../res/images/logo.png" alt="layui"> -->
+            <!-- <img src="../res/images/logo-1.png" alt="layui"> -->
         </a>
         <ul class="layui-nav fly-nav layui-hide-xs">
-            <li class="layui-nav-item">
-                <a href="index.html"><i class="iconfont icon-jiaoliu"></i>沟通交流</a>
+            <li class="layui-nav-item" onmouseve="visable('talk');" style="padding:0px;margin:0px;float: left">
+                <a href="index.html" class="MenuBarItemSubmenu" onmousemove="show('talk');this.style.backgroundColor='#789'"
+                   onmouseleave="this.style.backgroundColor = '#393D49';">
+                    <i class="iconfont icon-jiaoliu"></i>沟通交流
+                </a>
+                <ul id="talk" style="visibility: hidden; border-radius: 0px 0px 5px 5px;background-color: #777">
+                    <!--<div><img src="">                    </div>-->
+                </ul>
             </li>
-            <li class="layui-nav-item">
-                <a href="case.html"><i class="iconfont icon-iconmingxinganli"></i>法律法规与政策</a>
+            <li class="layui-nav-item" onmouseleave="visable('law');" style="padding:0px;margin:0px;float: left">
+                <a href="case.html" class="MenuBarItemSubmenu" onmousemove="show('law');this.style.backgroundColor='#789'"
+                   onmouseleave="this.style.backgroundColor = '#393D49';">
+                    <i class="iconfont icon-iconmingxinganli"></i>法律法规与政策
+                </a>
+                <ul id="law" style="visibility: hidden;border-radius: 0px 0px 5px 5px;background-color: #777">
+                    <!--<div><img src="">                    </div>-->
+                    <div>
+                        <a href="">+ 专利法</a>
+                        <a href="">+ 著作权法</a>
+                        <a href="">+ 商标法</a>
+                        <a href="">+ 信息网络传播条例</a>
+                        <a href="">+ 实施细则</a>
+                    </div>
+                </ul>
             </li>
-            <li class="layui-nav-item">
-                <a href="shop.html" target="_blank"><i class="iconfont icon-renshu"></i>周边商城</a>
+            <li class="layui-nav-item" onmouseleave="visable('shop');" style="padding:0px;margin:0px;float: left">
+                <a href="shop.html" class="MenuBarItemSubmenu" onmousemove="show('shop');this.style.backgroundColor='#789'"
+                   onmouseleave="this.style.backgroundColor = '#393D49';">
+                    <i class="iconfont icon-renshu"></i>周边商城
+                </a>
+                <ul id="shop" style="visibility: hidden;border-radius: 0px 0px 5px 5px;background-color: #777">
+                    <!--<div><img src="">                    </div>-->
+                </ul>
             </li>
-            <li class="layui-nav-item">
-                <a href="shop.html" target="_blank"><i class="iconfont icon-tishilian"></i>教育培训</a>
+            <li class="layui-nav-item" onmouseleave="visable('edu');" style="padding:0px;margin:0px;float: left">
+                <a class="MenuBarItemSubmenu" onmousemove="show('edu');this.style.backgroundColor='#789'"
+                   onmouseleave="this.style.backgroundColor = '#393D49';">
+                    <i class="iconfont icon-tishilian"></i>教育培训
+                </a>
+                <ul id="edu" style="visibility: hidden;border-radius: 0px 0px 5px 5px;background-color: #777">
+                    <!--<div><img src="">                    </div>-->
+                    <div>
+                        <a>+ 资格证书</a>
+                        <a>+ 升学</a>
+                        <a>+ 能力提升</a>
+                    </div>
+                </ul>
             </li>
-            <li class="layui-nav-item">
-                <a href="shop.html" target="_blank"><i class="iconfont icon-pinglun1"></i>诉讼服务</a>
+            <li class="layui-nav-item" onmouseleave="visable('server');" style="padding:0px;margin:0px;float: left">
+                <a class="MenuBarItemSubmenu" onmousemove="show('server');this.style.backgroundColor='#789'"
+                   onmouseleave="this.style.backgroundColor = '#393D49';">
+                    <i class="iconfont icon-pinglun1"></i>诉讼服务
+                </a>
+                <ul id="server" style="visibility: hidden;border-radius: 0px 0px 5px 5px;background-color: #777">
+                    <!--<div><img src="">                    </div>-->
+                    <div>
+                        <a>+ 判决书</a>
+                        <a>+ 庭审视频</a>
+                    </div>
+                </ul>
             </li>
-            <li class="layui-nav-item">
-                <a href="shop.html" target="_blank"><i class="iconfont icon-yulan"></i>申请与运营</a>
+            <li class="layui-nav-item" onmouseleave="visable('link');" style="padding:0px;margin:0px;float: left">
+                <a class="MenuBarItemSubmenu" onmousemove="show('link');this.style.backgroundColor='#789'"
+                   onmouseleave="this.style.backgroundColor = '#393D49';">
+                    <i class="iconfont icon-yulan"></i>常用链接库
+                </a>
+                <ul id="link" style="visibility: hidden;border-radius: 0px 0px 5px 5px;background-color: #777">
+                    <!--<div><img src="">                    </div>-->
+                </ul>
             </li>
-        </ul>
-
-        <ul class="layui-nav fly-nav-user">
-
-            <!-- 未登入的状态 -->
-            <li class="layui-nav-item">
-                <a class="iconfont icon-touxiang layui-hide-xs" href="user/login.html"></a>
-            </li>
-            <li class="layui-nav-item">
-                <a href="user/login.html">登入</a>
-            </li>
-            <li class="layui-nav-item">
-                <a href="user/reg.html">注册</a>
-            </li>
-            <li class="layui-nav-item layui-hide-xs">
-                <a href="" onclick="layer.msg('正在通过QQ登入', {icon:16, shade: 0.1, time:0})" title="QQ登入"
-                   class="iconfont icon-qq"></a>
-            </li>
-            <li class="layui-nav-item layui-hide-xs">
-                <a href="" onclick="layer.msg('正在通过微博登入', {icon:16, shade: 0.1, time:0})" title="微博登入"
-                   class="iconfont icon-weibo"></a>
-            </li>
-
-            <!-- 登入后的状态 -->
-            <!--
-            <li class="layui-nav-item">
-              <a class="fly-nav-avatar" href="javascript:;">
-                <cite class="layui-hide-xs">贤心</cite>
-                <i class="iconfont icon-renzheng layui-hide-xs" title="认证信息：layui 作者"></i>
-                <i class="layui-badge fly-badge-vip layui-hide-xs">VIP3</i>
-                <img src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg">
-              </a>
-              <dl class="layui-nav-child">
-                <dd><a href="../user/set.html"><i class="layui-icon">&#xe620;</i>基本设置</a></dd>
-                <dd><a href="../user/message.html"><i class="iconfont icon-tongzhi" style="top: 4px;"></i>我的消息</a></dd>
-                <dd><a href="../user/home.html"><i class="layui-icon" style="margin-left: 2px; font-size: 22px;">&#xe68e;</i>我的主页</a></dd>
-                <hr style="margin: 5px 0;">
-                <dd><a href="" style="text-align: center;">退出</a></dd>
-              </dl>
-            </li>
-            -->
         </ul>
     </div>
 </div>
